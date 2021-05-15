@@ -1,6 +1,6 @@
 <template>
   <div class="welcome container">
-      <p>Welcome to <span>Sector R</span> live chatroom</p>
+      <p>Welcome to Sector R live chatroom !</p>
       <div v-if="showLogin">
           <h2>Login</h2>
           <LoginForm/>
