@@ -12,7 +12,7 @@
 import { ref } from 'vue'
 import useSignup from '../composables/useSignup'
 
-export default {
+export default { 
     setup() {
         const { error, signup } = useSignup()
 
