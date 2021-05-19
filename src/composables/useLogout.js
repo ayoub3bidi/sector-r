@@ -17,3 +17,5 @@ const logout = async () => {
 const useLogout = () => {
     return { logout, error }
 }
+
+export default useLogout
