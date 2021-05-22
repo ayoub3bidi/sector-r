@@ -1,22 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Welcome from '../views/Welcome.vue'
-import chatroom from '../views/chatroom.vue'
+import Chatroom from '../views/chatroom.vue'
 import { projectAuth } from '../firebase/config'
 
-// auth guard
+// auth guards
 const requireAuth = (to, from, next) => {
   let user = projectAuth.currentUser
-  if (!user){
-    next({name: 'welcome'})
+  console.log('current user in auth guard: ', user)
+  if (!user) {
+    next({ name: 'Welcome' })
   } else {
     next()
   }
 }
 
-const requireNoAuth = () => {
+const requireNoAuth = (to, from, next) => {
   let user = projectAuth.currentUser
-  if (user){
-    next({name: 'Chatroom'})
+  if (user) {
+    next({ name: 'Chatroom' })
   } else {
     next()
   }
@@ -25,14 +26,14 @@ const requireNoAuth = () => {
 const routes = [
   {
     path: '/',
-    name: 'welcome',
+    name: 'Welcome',
     component: Welcome,
     beforeEnter: requireNoAuth
   },
   {
     path: '/chatroom',
-    name: 'chatroom',
-    component: chatroom,
+    name: 'Chatroom',
+    component: Chatroom,
     beforeEnter: requireAuth
   }
 ]
