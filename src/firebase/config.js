@@ -3,14 +3,14 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDh0vPQ4p9Z0DFDqx9S8zVc0vV5EPVgKLM",
-    authDomain: "sector-r-database.firebaseapp.com",
-    projectId: "sector-r-database",
-    storageBucket: "sector-r-database.appspot.com",
-    messagingSenderId: "90155331711",
-    appId: "1:90155331711:web:155c403c54504ba8ae4f4a"
-  };
-  
+  apiKey: "AIzaSyAIurRqMMjACU7sVB0nE1GB9yXfLK2aTIw",
+  authDomain: "sector-r.firebaseapp.com",
+  projectId: "sector-r",
+  storageBucket: "sector-r.appspot.com",
+  messagingSenderId: "816517679916",
+  appId: "1:816517679916:web:a855f3911b25d186633a89"
+};
+
 // init firebase
 firebase.initializeApp(firebaseConfig)
 
