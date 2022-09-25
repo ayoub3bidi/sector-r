@@ -1,6 +1,7 @@
 # Sector R
 
-A realtime chatroom.
+A realtime chatroom.  
+**Note**: I used this [color palette](https://colorhunt.co/palette/8bbccc4c67935c2e7e000000).
 
 ## Available Scripts
 
