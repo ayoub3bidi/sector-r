@@ -21,7 +21,7 @@ const Messages = () => {
   return (
     <div className="messages">
         {messages.map(message => (
-          <Message message={message} />
+          <Message message={message} key={message.id} />
         ))}
     </div>
   )
