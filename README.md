@@ -1,7 +1,6 @@
 # Sector R
 
-A realtime chatroom. You can check it out from [here](https://sector-r.vercel.app).  
-**Note**: I used this [color palette](https://colorhunt.co/palette/8bbccc4c67935c2e7e000000).
+A realtime chatroom. Created with [T3 stack](https://github.com/t3-oss/create-t3-app).
 
 ## Available Scripts
 
@@ -15,13 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-```
-yarn test
-```
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ```
 yarn build
